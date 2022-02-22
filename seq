@@ -1,0 +1,13 @@
+a, b = 0, 1
+fib= [0]
+while a < 10000:
+    a, b = b, a+b
+    fib.append(a)
+num= int (input ("Digite um número: " ))
+while (num<0 or num>10000):
+    num= int (input("Digite um número de 0 a 10000: "))
+c=fib.count(num)
+if c>0 :
+  print("Esse número pertence a sequência Fibonacci")
+elif (c<=0):
+   print("Esse número não pertence a sequência Fibonacci")
